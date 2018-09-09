@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="JK with Jon and Kate">
+
+  <title>JK with Jon and Kate</title>
+
+  <link rel="icon" href="/images/favicon.ico">
+  <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+  <% } %>
+</head>
+
+<body>
+  <div id="root">
+    <div class="component__loading">
+      <div class="loading">
+        <div class="bar-container">
+          <div class="bar"></div>
+        </div>
+        <p class="info">Loading...</p>
+      </div>
+    </div>
+  </div>
+  <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+      <script defer src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+  <% } %>
+</body>
+</html>

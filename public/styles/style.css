@@ -1,0 +1,305 @@
+/*universal styles*/
+body {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    font-size: 18px;
+}
+
+/*universal styles*/
+/*NON-MOBILE*/
+.mainBodyStyle {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.flexColumnStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexRowStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mainDescriptionStyle {
+    max-width: 700px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.removeButtonDefaultStyle {
+    outline: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    display: block;
+    background-color: transparent;
+    color: black;
+}
+
+.linkStyles {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.bitmojiIconStyle {
+    max-height: 360px;
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*header*/
+.flexWrapperHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 75px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.headerIconImgStyle {
+    width: 55px;
+    border-radius: 30px;
+}
+
+.headerBottomStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto 20px;
+}
+
+.headerBottomImgContainerStyle {
+    max-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.listContainerStyle {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid;
+}
+
+.linkListContainerStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: black;
+    height: 100%;
+    font-size: 18px;
+}
+.linkListContainerStyle:hover {
+    background-color: #32a5fc;
+    color: white;
+}
+
+/*footer*/
+.footerContainerStyle {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*main*/
+/* none */
+
+/*about*/
+.aboutPeopleStyle {
+    width: 700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aboutPeopleContainerStyle {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*podcast*/
+.podcastContainerStyle {
+    max-width: 700px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*error page*/
+.errorPageStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.imageContainerErrorStyle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px auto 25px;
+}
+
+.bottomLinkStyle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*MOBILE*/
+/*universal*/
+.mainBodyStyleMobile {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-width: 500px;
+    min-width: 100%;
+    position: relative;
+}
+
+.mainDescriptionStyleMobile {
+    max-width: 500px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 25px;
+}
+
+/*header*/
+.flexWrapperHeaderMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 60px;
+    padding: 5px;
+    border-bottom: 1px solid;
+    overflow: hidden;
+}
+
+.headerIconImgStyleMobile {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.headerBottomStyleMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto 20px;
+}
+
+.listContainerStyleMobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid;
+}
+
+.bitmojiIconStyleMobile {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*footer*/
+
+/*main*/
+
+/*about*/
+.aboutPeopleStyleMobile {
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+}
+
+.aboutPeopleContainerStyleMobile {
+    width: 100%;
+    padding: 0 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*podcast*/
+.podcastContainerStyleMobile {
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*error page*/
+.errorPageStyleMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    padding: 0 25px;
+}
